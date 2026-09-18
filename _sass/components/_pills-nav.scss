@@ -1,0 +1,42 @@
+.category-nav {
+  position: sticky;
+  top: 0;
+  background-color: rgba($bg-primary, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 100;
+  border-bottom: 1px solid $border-color;
+  padding: 1rem 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; // Hides scrollbar on Firefox
+
+  &::-webkit-scrollbar {
+    display: none; // Hides scrollbar on Chrome, Safari, and Opera
+  }
+
+  .container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .pill-link {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background-color: $bg-surface;
+    color: $text-muted;
+    border: 1px solid $border-color;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: $transition;
+
+    &:hover, &.active {
+      background-color: $accent-gold;
+      color: $bg-primary;
+      border-color: $accent-gold;
+      transform: translateY(-2px);
+    }
+  }
+}

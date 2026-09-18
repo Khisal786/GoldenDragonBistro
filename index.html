@@ -1,0 +1,53 @@
+---
+layout: default
+title: "Menu & Ordering"
+---
+
+<section class="hero-section">
+  <div class="container">
+    <h1>The Golden Dragon Bistro</h1>
+    <p>Traditional flavors, modern convenience. Order directly via WhatsApp.</p>
+  </div>
+</section>
+
+<!-- Sticky Category Navigation Pills -->
+<nav class="category-nav sticky">
+  <div class="container">
+    {% for cat in site.data.menu.categories %}
+      <a href="#{{ cat.id }}" class="pill-link">{{ cat.name }}</a>
+    {% endfor %}
+  </div>
+</nav>
+
+<!-- Menu Sections Rendered Dynamically -->
+<main class="container menu-container">
+  {% for cat in site.data.menu.categories %}
+    <div id="{{ cat.id }}" class="menu-category-section">
+      <h2>{{ cat.name }}</h2>
+      <div class="menu-grid">
+        {% for item in cat.items %}
+          <div class="menu-card">
+            {% if item.image %}
+              <img src="{{ item.image | relative_url }}" alt="{{ item.name }}" loading="lazy">
+            {% endif %}
+            <div class="menu-card-content">
+              <h3>{{ item.name }}</h3>
+              <p class="description">{{ item.description }}</p>
+              <div class="card-footer">
+                <span class="price">${{ item.price | round: 2 }}</span>
+                <button class="add-to-cart-btn" 
+                        data-name="{{ item.name }}" 
+                        data-price="{{ item.price }}">
+                  Add to Order
+                </button>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</main>
+
+<!-- Location & Hours Section -->
+{% include location-hours.html %}

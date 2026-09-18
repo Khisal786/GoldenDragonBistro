@@ -1,0 +1,101 @@
+.location-hours-section {
+  padding: 3rem 1rem 4rem 1rem;
+  background-color: $bg-surface;
+  border-top: 1px solid $border-color;
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 1.75rem;
+
+    h2 {
+      font-family: $font-heading;
+      color: $accent-gold;
+      font-size: 1.75rem;
+      margin-bottom: 0.35rem;
+    }
+
+    p {
+      color: $text-muted;
+      font-size: 0.9rem;
+    }
+  }
+
+  .location-card {
+    max-width: 480px;
+    margin: 0 auto;
+    background: #1a1a1e;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    .info-group {
+      margin-bottom: 1.25rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      h3 {
+        font-size: 0.95rem;
+        color: $accent-gold;
+        font-family: $font-heading;
+        margin-bottom: 0.4rem;
+        letter-spacing: 0.5px;
+      }
+
+      p {
+        color: $text-main;
+        font-size: 0.95rem;
+        line-height: 1.4;
+      }
+
+      .hours-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          padding: 0.3rem 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+          font-size: 0.9rem;
+          color: $text-main;
+
+          span:first-child {
+            color: $text-muted;
+          }
+        }
+      }
+    }
+
+    .action-group {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+      .directions-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+        background-color: $accent-gold;
+        color: #121215; // High contrast dark text on gold background
+        padding: 0.8rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.95rem;
+        transition: all 0.2s ease;
+        box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+
+        &:hover {
+          background-color: #e5be3b;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}

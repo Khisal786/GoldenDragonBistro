@@ -1,0 +1,40 @@
+categories:
+  - id: "appetizers"
+    name: "Appetizers & Dim Sum"
+    items:
+      - name: "Pork Soup Dumplings (Xiao Long Bao)"
+        price: 9.50
+        description: "Delicate steamed dumplings filled with seasoned pork and rich broth."
+        image: "/assets/images/dishes/dumplings.webp"
+      - name: "Crispy Spring Rolls (2 pcs)"
+        price: 4.50
+        description: "Crispy wrapper filled with shredded cabbage, carrots, and mushrooms."
+        image: "/assets/images/dishes/spring-rolls.webp"
+
+  - id: "soups"
+    name: "Soups"
+    items:
+      - name: "Wonton Soup"
+        price: 5.00
+        description: "Pork-filled wontons in a clear, savory chicken broth with scallions."
+        image: "/assets/images/dishes/wonton-soup.webp"
+      - name: "Hot & Sour Soup"
+        price: 5.25
+        description: "Traditional spicy and tangy broth with tofu, bamboo shoots, and wood ear mushrooms."
+        image: "/assets/images/dishes/hot-sour-soup.webp"
+
+  - id: "entrees"
+    name: "Chef's Specialties & Entrees"
+    items:
+      - name: "General Tso's Chicken"
+        price: 16.50
+        description: "Crispy chicken chunks tossed in a sweet, spicy, and tangy garlic sauce."
+        image: "/assets/images/dishes/general-tsos.webp"
+      - name: "Beef with Broccoli"
+        price: 17.50
+        description: "Tender flank steak stir-fried with fresh crisp broccoli in a rich ginger-soy glaze."
+        image: "/assets/images/dishes/beef-broccoli.webp"
+      - name: "House Special Lo Mein"
+        price: 16.00
+        description: "Soft egg noodles tossed with chicken, beef, shrimp, and seasonal vegetables."
+        image: "/assets/images/dishes/lo-mein.webp"

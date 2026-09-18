@@ -1,0 +1,93 @@
+.menu-category-section {
+  margin-bottom: 4rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid $accent-gold;
+    display: inline-block;
+  }
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.menu-card {
+  background-color: $bg-surface;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: $transition;
+
+  &:hover {
+    border-color: rgba($accent-gold, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+    img {
+      transform: scale(1.05);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  &-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5Rem;
+    }
+
+    .description {
+      color: $text-muted;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+
+      .price {
+        font-family: $font-heading;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: $accent-gold;
+      }
+
+      .add-to-cart-btn {
+        background-color: transparent;
+        color: $accent-gold;
+        border: 1px solid $accent-gold;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        transition: $transition;
+
+        &:hover {
+          background-color: $accent-gold;
+          color: $bg-primary;
+        }
+      }
+    }
+  }
+}
