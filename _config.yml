@@ -1,8 +1,8 @@
 title: "The Golden Dragon Bistro"
 email: "orders@goldendragonbistro.example"
 description: "Authentic American-Chinese cuisine crafted fresh. Order online for pickup or delivery."
-baseurl: "" 
-url: "https://khisal786.github.io/GoldenDragonBistro/"
+baseurl: "/GoldenDragonBistro" 
+url: "https://khisal786.github.io"
 
 # Enable Sass processing
 sass:
